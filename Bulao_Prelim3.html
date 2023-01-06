@@ -21,13 +21,19 @@
 </head>
 <body>
     <div class="flex h-screen justify-center items-center">
-        <button id="theme-toggle" type="button" class="absolute top-0 left-0 m-5 bg-[#22242A] hover:bg-gray-600 rounded-full text-sm p-2.5">
+        <button id="theme-toggle" type="button" class="fixed top-0 left-0 m-5 bg-[#22242A] hover:bg-gray-600 rounded-full text-sm p-2.5">
             <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
             <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
         </button>
         
         <div class="flex flex-col items-center bg-white dark:bg-[#22242A] border-2 border-gray-200 dark:border-black h-full max-h-[560px] w-full max-w-sm p-5 rounded-lg shadow-[0px_0px_60px_-15px_rgba(0,0,0,0.3)]">
-            <img class="h-32 w-32 rounded-lg mt-12 mb-8" src="./img/bulao_pic.png" alt="Picture of Adrianne Bulao" title="Picture of Adrianne Bulao">
+            <div class="flex flex-col items-center shrink-0 h-[136px] w-[148px] mt-10 mb-8 relative">
+                <img class="h-32 w-32 rounded-lg absolute bottom-0" src="./img/bulao_pic.png" alt="Picture of Adrianne Bulao" title="Picture of Adrianne Bulao">
+                <svg class="absolute top-0 right-0" height="30" width="30">
+                    <circle cx="13" cy="13" r="11" stroke="white" stroke-width="3" fill="#27D814" />
+                </svg> 
+            </div>
+
             <h1 class="text-3xl font-semibold dark:text-white mb-2">Adrianne Bulao</h1>
             <h1 class="text-2xl dark:text-white mb-8">amcbulao@addu.edu.ph</h1>
             <button class="rounded-lg bg-blue-600 hover:bg-blue-700 pt-3 pb-3 pl-6 pr-9 text-lg font-medium text-white tracking-wider"><img class="h-4 w-4 inline ml-3 mr-3" src="./img/following-icon.svg"> Follow Me</button>
