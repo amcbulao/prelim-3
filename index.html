@@ -11,7 +11,6 @@
             darkMode: 'class'
         }
         
-        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
         if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
         } else {
@@ -28,7 +27,7 @@
         
         <div class="flex flex-col items-center bg-white dark:bg-[#22242A] border-2 border-gray-200 dark:border-black h-full max-h-[560px] w-full max-w-sm p-5 rounded-lg shadow-[0px_0px_60px_-15px_rgba(0,0,0,0.3)]">
             <div class="flex flex-col items-center shrink-0 h-[136px] w-[148px] mt-10 mb-8 relative">
-                <img class="h-32 w-32 rounded-lg absolute bottom-0" src="./img/bulao_pic.png" alt="Picture of Adrianne Bulao" title="Picture of Adrianne Bulao">
+                <img class="h-32 w-32 rounded-lg absolute bottom-0" src="./images/bulao_pic.png" alt="Picture of Adrianne Bulao" title="Picture of Adrianne Bulao">
                 <svg class="absolute top-0 right-0" height="30" width="30">
                     <circle cx="13" cy="13" r="11" stroke="white" stroke-width="3" fill="#27D814" />
                 </svg> 
@@ -36,7 +35,7 @@
 
             <h1 class="text-3xl font-semibold dark:text-white mb-2">Adrianne Bulao</h1>
             <h1 class="text-2xl dark:text-white mb-8">amcbulao@addu.edu.ph</h1>
-            <button class="rounded-lg bg-blue-600 hover:bg-blue-700 pt-3 pb-3 pl-6 pr-9 text-lg font-medium text-white tracking-wider"><img class="h-4 w-4 inline ml-3 mr-3" src="./img/following-icon.svg"> Follow Me</button>
+            <button class="rounded-lg bg-blue-600 hover:bg-blue-700 pt-3 pb-3 pl-6 pr-9 text-lg font-medium text-white tracking-wider"><img class="h-4 w-4 inline ml-3 mr-3" src="./images/following-icon.svg"> Follow Me</button>
             <div class="mt-8 w-full grid grid-cols-2 gap-2 place-content-around">
                 <h1 class="text-center font-normal text-3xl dark:text-white">12.6K</h1>
                 <h1 class="text-center font-normal text-3xl dark:text-white">85</h1>
